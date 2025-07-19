@@ -1,0 +1,85 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+*{
+    margin: 0%;
+    font-family: "Poppins";
+    /*background-color: rgb(145, 173, 145);*/
+}
+
+
+#boasVindas{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    
+}
+
+#h2Juliana{
+    font-size: 40px;
+}
+
+.foto{
+    width: 300px;
+    border-radius: 70%;
+}
+
+.direcoes{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.direcionamento{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+#sobre{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.descricao{
+    width: 300px;
+}
+
+.secao1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagensHabilidade{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.imgTecnicas {
+    width: 100px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
