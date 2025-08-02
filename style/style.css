@@ -2,34 +2,34 @@
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
+}
 
-*{
+* {
     margin: 0%;
     font-family: "Poppins";
     /*background-color: rgb(145, 173, 145);*/
 }
 
 
-#boasVindas{
+#boasVindas {
     margin: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    
+
 }
 
-#h2Juliana{
+#h2Juliana {
     font-size: 40px;
 }
 
-.foto{
+.foto {
     width: 300px;
     border-radius: 70%;
 }
 
-.direcoes{
+.direcoes {
     display: flex;
     gap: 80px;
     justify-content: center;
@@ -40,13 +40,13 @@ a {
     text-decoration: none;
 }
 
-.direcionamento{
+.direcionamento {
     text-decoration: none;
     font-size: 20px;
     color: black;
 }
 
-#sobre{
+#sobre {
     margin: 40px;
     display: flex;
     justify-content: center;
@@ -54,18 +54,18 @@ a {
     gap: 60px;
 }
 
-.descricao{
+.descricao {
     width: 300px;
 }
 
-.secao1{
+.secao1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#imagensHabilidade{
+#imagensHabilidade {
     margin: 40px;
     display: flex;
     justify-content: center;
@@ -77,9 +77,109 @@ a {
     width: 100px;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+}
+
+/*Página de certificados*/
+
+#certificado {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagensCertificados {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.imgCerti {
+    width: 350px;
+    box-shadow: 70cm;
+    border-radius: 15px;
+}
+
+/*Página de projetos*/
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#projetos{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#projeto{
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#especificacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#biblioteca{
+    padding-bottom: 10px;
+}
+
+#paBiblioteca{
+    width: 70ch;
 }
