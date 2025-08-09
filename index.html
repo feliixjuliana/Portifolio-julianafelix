@@ -15,41 +15,67 @@
 </head>
 
 <body>
-    <header class="menuNav">
-
-    </header>
-
     <main>
-        <div id="boasVindas">
+        <section id="boasVindas">
             <div id="foto">
-                <img src="public/tecnologias/fotoInicial.jpg" alt="" srcset="" class="foto">
+                <img src="public/tecnologias/fotoInicial.jpg" alt="" srcset="" id="fotoInicial">
             </div>
-            <div class="inforJu">
-                <h2 id="h2Juliana">Olá, sou <br> Juliana Felix</h2>
-                <nav id="redesSociais">
+            <div class="inforJuliana">
+                <h1 id="h2Juliana">Olá, sou Juliana Felix</h1>
+                <p>Aspirante a desenvolvedora fullStack, <br> instrutora em oficinas.</p>
+                <a href="pages/"></a>
+                <div class="buttons">
+                    <a href="https://github.com/feliixjuliana" target="_blank">
+                        <button class="variacaoButton1">
+                            Github
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/feliixjuliana/" target="_blank"> <button class="variacaoButton1">
+                            Linkedin
+                        </button></a>
 
-                </nav>
+                </div>
             </div>
-        </div>
-        <nav class="direcoes">
-            <a href="pages/projetos.html" class="direcionamento">Projetos</a>
-            <a href="pages/mentorias.html" class="direcionamento">Mentorias</a>
-            <a href="pages/capacitacoes.html" class="direcionamento">Certificacoes</a>
-        </nav>
-        <div id="sobre">
-            <p class="descricao">
-                Formada em técnica em informática para internet pelo Instituto Federal de Pernambuco, atualmente
-                cursando o curso tecnólogo em Análise e Desenvolvimento de Sistemas, também pelo Instituto de
-                Federal de Pernambuco.
-            </p>
+        </section>
+        <section id="sobre">
+            <div class="textos">
+                <h2>SOBRE MIM </h2>
+                <p class="descricao">
+                    Estudante de Análise e Desenvolvimento de Sistemas, formada em técnica em informática para internet, ambos no Instituto Federal de Pernambuco.
+                    Além disso, participa ativamente de oficinas como instrutora e aulas de reforço de programação como freelancer. 
+                </p>
+                <a href="certificadosPage/capacitacoes.html">
+                <button class="variacaoButton2">
+                    Certificados
+                </button></a>
+            </div>
+
             <div id="foto2">
-                <img src="public/tecnologias/foto22.jpg" alt="" class="foto">
+                <img src="public/tecnologias/foto22.jpg" alt="" class="foto2">
             </div>
 
-            <p class="descricao">
-                Além dos cursos
-            </p>
-        </div>
+        </section>
+
+
+        <article class="article">
+            <h2>PROJETOS</h2>
+            <div id="linhaAmarela">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img class="carousel-item" src="../public/projetoCatalogoFIlmes/inicial.png" alt="Imagem 1">
+                        <img class="carousel-item" src="../public/projetoCatalogoFIlmes/filmes.png" alt="Imagem 2">
+                        <img class="carousel-item" src="../public/projetoCatalogoFIlmes/cadastro.png" alt="Imagem 3">
+                        <img class="carousel-item" src="../public/projetoCatalogoFIlmes/respo.png" alt="Imagem 4">
+                    </div>
+                    <button class="carousel-button prev">◀</button>
+                    <button class="carousel-button next">▶</button>
+                </div>
+            </div>
+            <a href="projetosPage/projetos.html">
+            <button class="variacaoButton2">
+                Veja detalhes aqui
+            </button></a>
+        </article>
 
 
         <section class="secao1">
@@ -62,9 +88,6 @@
                 <img src="public/tecnologias/script-java.png" alt="" class="imgTecnicas">
 
                 <img src="public/tecnologias/node-js.png" alt="" class="imgTecnicas">
-            </div>
-
-            <div id="imagensHabilidade">
 
                 <img src="public/tecnologias/python.png" alt="" class="imgTecnicas">
 
@@ -77,11 +100,20 @@
             </div>
         </section>
 
-
+        <script src="script.js"></script>
     </main>
 
     <footer class="footer">
-        <h2>Contatos</h2>
+        <section class="email-section">
+            <h2 class="email-title">Entre em Contato</h2>
+            <p class="email-description">Ficou com alguma dúvida, tem uma proposta de projeto ou quer saber mais sobre
+                meu trabalho? Fique à vontade para entrar em contato por: </p>
+            <a href="mailto:feliixjuliana890@gmail.com?subject=Contato%20sobre%20proposta" class="email-button" target="_blank">Enviar
+                E-mail</a>
+
+            <a href="https://www.instagram.com/jubistech" class="email-button" target="_blank">Instagram</a>
+
+        </section>
     </footer>
 </body>
 
