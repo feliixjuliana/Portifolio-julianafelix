@@ -41,7 +41,7 @@ body {
         blink-caret 0.75s step-end infinite;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     #h2Juliana {
         font-size: 30px;
         width: 0;
@@ -281,7 +281,7 @@ h2 {
     width: 150px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     #imagensHabilidade {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
