@@ -5,8 +5,9 @@
 }
 
 * {
-    margin: 0%;
+    margin: 0px;
     font-family: "Poppins";
+    box-sizing: border-box;
 }
 
 body {
@@ -23,10 +24,25 @@ body {
     gap: 50px;
 }
 
+@media (max-width: 900px) {
+    #boasVindas {
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px
+    }
+}
+
+@media (max-width: 700px) {
+    #boasVindas {
+        padding: 5px;
+        flex-direction: column;
+        gap: 10px
+    }
+}
+
 #fotoInicial {
     width: 350px;
     border-radius: 50%;
-
 }
 
 #h2Juliana {
@@ -119,12 +135,6 @@ body {
 }
 
 @media (max-width: 900px) {
-    #boasVindas {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px
-    }
 
     h1 {
         font-size: 40px;
@@ -132,47 +142,28 @@ body {
 
     #fotoInicial {
         width: 260px;
-        border-radius: 50%;
-
     }
 }
 
 @media (max-width: 700px) {
-    #boasVindas {
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px
-    }
 
     h1 {
         font-size: 40px;
     }
-    
-    p{
-        font-size: 10px;
+
+    p {
+        font-size: 12px;
     }
 
     #fotoInicial {
         width: 160px;
-        border-radius: 50%;
-
+        margin-top: 20px;
     }
 
     .variacaoButton1 {
-        background-color: #F2E8B8;
         padding: 8px;
-        border-radius: 8px;
-        border-width: 0px;
-        color: rgb(0, 66, 0);
-        font-weight: bold;
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 10px;
-    }
-    
-    .variacaoButton1:hover {
-        background-color: rgb(3, 75, 3);
-        color: white;
     }
 }
 
@@ -181,8 +172,6 @@ body {
     background-color: #F2E8B8;
     padding: 20px;
     justify-content: center;
-
-
 }
 
 h2 {
@@ -215,18 +204,12 @@ h2 {
     color: rgb(0, 66, 0);
     border-width: 1px;
     border-color: rgb(0, 66, 0);
-    ;
-
-
 }
 
 @media (max-width: 1000px) {
     #sobre {
-        display: flex;
         flex-direction: column;
-        background-color: #F2E8B8;
         padding: 15px;
-        justify-content: center;
         align-items: center;
         gap: 10px;
     }
@@ -236,9 +219,8 @@ h2 {
     }
 
     .descricao {
-        margin-top: 10px;
-        margin-bottom: 10px;
         width: 400px;
+        font-size: 12px;
     }
 
     .foto2 {
@@ -248,47 +230,25 @@ h2 {
 
 @media (max-width: 700px) {
     #sobre {
-        display: flex;
-        background-color: #F2E8B8;
         padding: 10px;
-        justify-content: center;
-    
-    
     }
-    
+
     h2 {
         font-size: 20px;
     }
-    
+
     .descricao {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 200px;
+        width: 300px;
+        font-size: 12px;
     }
-    
+
     .foto2 {
         width: 150px;
-        border-radius: 20px;
     }
-    
+
     .variacaoButton2 {
-        background-color: rgb(3, 75, 3);
-        color: white;
         padding: 8px;
-        border-radius: 8px;
-        border-width: 0px;
-        font-weight: bold;
-        font-size: 10px;
-    }
-    
-    .variacaoButton2:hover {
-        background-color: #F2E8B8;
-        color: rgb(0, 66, 0);
-        border-width: 1px;
-        border-color: rgb(0, 66, 0);
-        ;
-    
-    
+        font-size: 12px;
     }
 }
 
@@ -300,14 +260,13 @@ h2 {
     justify-content: center;
     justify-items: center;
     align-items: center;
-
 }
 
-#linhaAmarela {
-    padding: 10px;
-    border-width: 9px;
-    border-radius: 10px;
-    border-color: #F2E8B8;
+@media (max-width: 700px) {
+    .article {
+        padding: 20px;
+        gap: 20px;
+    }
 }
 
 .carousel {
@@ -338,8 +297,8 @@ h2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: #F2E8B8;
+    color: green;
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -360,24 +319,18 @@ h2 {
 }
 
 @media (max-width: 700px) {
-    .article {
-        padding: 20px;
-        gap: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    
+
+    .carousel {
+        max-width: 350px;
+        padding: 10px;
     }
+
     #linhaAmarela {
         padding: 1px;
-        border-width: 9px;
-        border-radius: 10px;
-        border-color: #F2E8B8;
     }
+
     .carousel {
-        width: 30%;
+        width: 70%;
     }
 }
 
@@ -404,10 +357,8 @@ h2 {
 
 @media (max-width: 1200px) {
     #imagensHabilidade {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        justify-items: center;
     }
 
     .imgTecnicas {
@@ -417,21 +368,17 @@ h2 {
 
 @media (max-width: 700px) {
     #imagensHabilidade {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        justify-items: center;
+        gap: 15px;
+        
     }
 
-    #habilidade{
-        width: 0px;
-        margin: 0px;
-        padding: 0px;
+    #habilidade {
         text-align: center;
     }
 
     .imgTecnicas {
-        width: 50px;
+        width: 60px;
     }
 }
 
@@ -484,47 +431,26 @@ h2 {
 
 @media (max-width: 700px) {
     .footer {
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .email-section {
-        text-align: center;
         padding: 10px;
-        background-color: #ffffff;
-        border-radius: 10px;
-        max-width: 200px;
     }
-    
+
+    .email-section {
+        margin: 10px;
+        padding: 20px;
+        max-width: 80%;
+    }
+
     .email-title {
         font-size: 20px;
-        color: rgb(0, 66, 0);
-        margin-bottom: 10px;
     }
-    
+
     .email-description {
-        font-size: 10px;
-        color: rgb(0, 66, 0);
-        margin-bottom: 10px;
+        font-size: 12px;
+        margin-bottom: 20px;
     }
-    
+
     .email-button {
-        display: inline-block;
-        padding: 12px;
-        background-color: rgb(0, 66, 0);
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        font-size: 10px;
-    }
-    
-    .email-button:hover {
-        background-color: #3b543d;
-        transform: translateY(-2px);
+        padding: 8px;
+        font-size: 14px;
     }
 }
