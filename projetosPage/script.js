@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
-            title: 'Site de E-commerce',
+            title: 'Greenshop',
             description: 'Uma plataforma de e-commerce moderna construída com foco em React.ts, TypeScript e consumo de api.',
             image: '../public/projetoGreenShop/inicial.png',
             tags: ['React.js', 'TypeScript'],
@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
             repositoryLink: 'https://github.com/feliixjuliana/blueshop-web2'
         },
         {
-            title: 'Site de biblioteca de Filmes',
+            title: 'Movie Library',
             description: 'Desenvolvimento FullStack com TypeScript, React.js e Banco de Dados relacional.',
             image: '../public/projetoCatalogoFilmes/inicial.png',
             tags: ['MySQL', 'React.js', 'TypeScript'],
             dataAiHint: 'analytics chart',
-            repositoryLink: 'https://github.com/feliixjuliana/CatalogoFilmes-Web2'
+            repositoryLink: 'https://github.com/feliixjuliana/MovieLibrary-web2'
         },
         {
             title: 'Site de Filmes - Studio Ghibli',

@@ -11,12 +11,18 @@
 
 body {
     color: rgb(3, 75, 3);
-    background-image: url(../public/background.png);
+    background-color: #F2E8B8;
 }
 
 h2 {
     padding: 20px;
     font-size: 50px;
+}
+
+@media (max-width: 700px) {
+    h2 {
+        font-size: 30px;
+    }
 }
 
 #portfolio {
@@ -46,6 +52,13 @@ h2 {
     color: rgb(0, 66, 0);
 }
 
+@media (max-width: 700px) {
+    .fixed-button {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
 .filter-buttons {
     gap: 90px;
 }
@@ -66,10 +79,25 @@ h2 {
     color: rgb(0, 66, 0);
 }
 
+@media (max-width: 700px) {
+    .filter-buttons {
+        gap: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .filter-btn {
+        padding: 6px;
+        font-size: 12px;
+
+    }
+
+}
+
 .repository-btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
+    width: 50%;
+    padding: 4px;
     margin-top: 15px;
     margin-right: 10px;
     background-color: #F2E8B8;
@@ -101,6 +129,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
+
 }
 
 .project-card:hover {
@@ -115,23 +144,35 @@ h2 {
 
 .project-card-content {
     padding: 20px;
+    gap: 20px;
 }
 
 .project-card h3 {
     font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 10px;
-    color: #333;
+    color: green#333;
 }
 
 .project-card p {
     font-size: 1rem;
-    color: #666;
+    color: green;
     line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    .project-card h3 {
+        font-size: 25px;
+    }
+
+    .project-card p {
+        font-size: 15;
+    }
 }
 
 .project-tags {
     margin-top: 15px;
+    margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
