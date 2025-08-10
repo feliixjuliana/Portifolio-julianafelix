@@ -219,8 +219,8 @@ h2 {
     }
 
     .descricao {
-        width: 400px;
-        font-size: 12px;
+        width: 500px;
+        font-size: 17px;
     }
 
     .foto2 {
@@ -272,7 +272,7 @@ h2 {
 .carousel {
     position: relative;
     overflow: hidden;
-    max-width: 600px;
+    max-width: 800px;
     width: 90%;
     margin: 0 auto;
     height: auto;
@@ -313,6 +313,12 @@ h2 {
 }
 
 @media (max-width: 900px) {
+
+    .carousel {
+        max-width: 500px;
+        padding: 10px;
+    }
+
     .carousel {
         width: 70%;
     }
@@ -370,7 +376,7 @@ h2 {
     #imagensHabilidade {
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
-        
+
     }
 
     #habilidade {
@@ -427,6 +433,32 @@ h2 {
 .email-button:hover {
     background-color: #3b543d;
     transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .email-section {
+        margin: 10px;
+        padding: 20px;
+        max-width: 80%;
+    }
+
+    .email-title {
+        font-size: 20px;
+    }
+
+    .email-description {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .email-button {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 700px) {
