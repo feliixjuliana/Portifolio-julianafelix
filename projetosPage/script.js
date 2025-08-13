@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'Movie Library',
-            description: 'Desenvolvimento FullStack com TypeScript, React.js e Banco de Dados relacional.',
+            description: 'Desenvolvimento Full Stack com TypeScript, React.js e Banco de Dados relacional.',
             image: '../public/projetoCatalogoFilmes/inicial.png',
             tags: ['MySQL', 'React.js', 'TypeScript'],
             dataAiHint: 'analytics chart',
