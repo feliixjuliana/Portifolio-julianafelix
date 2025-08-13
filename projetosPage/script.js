@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             title: 'Greenshop',
-            description: 'Uma plataforma de e-commerce moderna construída com foco em React.ts, TypeScript e consumo de api.',
+            description: 'Desenvolvimento Front-end, uma plataforma e-commerce moderna construída com React.ts, TypeScript e consumo de api.',
             image: '../public/projetoGreenShop/inicial.png',
             tags: ['React.js', 'TypeScript'],
             dataAiHint: 'online store',

@@ -172,6 +172,9 @@ body {
     background-color: #F2E8B8;
     padding: 20px;
     justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
 }
 
 h2 {
